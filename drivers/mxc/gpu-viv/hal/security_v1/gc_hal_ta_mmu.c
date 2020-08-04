@@ -582,5 +582,3 @@ gctaMMU_DumpPagetableEntry(
         gcmkPRINT("    stlb entry = 0x%08X", stlbLogical[stlbOffset]);
     }
 }
-
-

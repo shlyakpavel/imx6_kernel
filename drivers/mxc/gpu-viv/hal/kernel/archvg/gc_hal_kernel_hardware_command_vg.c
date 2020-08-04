@@ -1189,4 +1189,3 @@ gckVGCOMMAND_EndCommand(
 }
 
 #endif /* gcdENABLE_VG */
-

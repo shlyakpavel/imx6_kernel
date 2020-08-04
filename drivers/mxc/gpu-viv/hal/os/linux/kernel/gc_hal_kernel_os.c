@@ -7804,4 +7804,3 @@ gckOS_GetPolicyID(
 
     return gcvSTATUS_NOT_SUPPORTED;
 }
-

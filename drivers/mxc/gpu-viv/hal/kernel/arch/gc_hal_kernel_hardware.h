@@ -362,4 +362,3 @@ gckHARDWARE_DummyDraw(
 #endif
 
 #endif /* __gc_hal_kernel_hardware_h_ */
-

@@ -247,4 +247,3 @@ gckIOMMU_Unmap(
     gcmkFOOTER_NO();
     return gcvSTATUS_OK;
 }
-

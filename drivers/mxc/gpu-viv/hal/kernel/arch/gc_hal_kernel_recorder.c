@@ -724,5 +724,3 @@ gckRECORDER_Dump(
         last = _Next(last);
     }
 }
-
-

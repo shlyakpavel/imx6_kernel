@@ -2849,4 +2849,3 @@ gckOS_BinaryTrace(
     /* Send buffer to ring buffer. */
     gckOS_WriteToRingBuffer(buffer, (gctUINT32)(payload - buffer));
 }
-

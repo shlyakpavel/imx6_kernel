@@ -350,4 +350,3 @@ gckVGCOMMAND_EndCommand(
     );
 
 #endif  /* __gc_hal_kernel_hardware_command_h_ */
-

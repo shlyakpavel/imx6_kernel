@@ -111,4 +111,3 @@ struct _gckVGHARDWARE
 };
 
 #endif /* __gc_hal_kernel_hardware_h_ */
-

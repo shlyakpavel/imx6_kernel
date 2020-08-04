@@ -3553,4 +3553,3 @@ gckCOMMAND_AddressInKernelCommandBuffer(
 
     return gcvSTATUS_NOT_FOUND;
 }
-

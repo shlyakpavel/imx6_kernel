@@ -318,5 +318,3 @@ gctaOS_SetGPUPower(
 {
     return gckOS_SetGPUPower(Os->os, Core, Power, Clock);
 }
-
-

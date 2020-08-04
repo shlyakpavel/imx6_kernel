@@ -120,4 +120,3 @@ gcsDUMP_DATA;
 #endif
 
 #endif /* __gc_hal_dump_h_ */
-

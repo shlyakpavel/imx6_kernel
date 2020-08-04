@@ -3135,4 +3135,3 @@ gckVIDMEM_FindVIDMEM(
 
     return status;
 }
-

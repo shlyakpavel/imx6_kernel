@@ -961,4 +961,3 @@ gctaHARDWARE_HandleMMUException(
     gcmkFOOTER_NO();
     return gcvSTATUS_OK;
 }
-

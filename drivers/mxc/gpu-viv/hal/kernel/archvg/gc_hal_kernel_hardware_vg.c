@@ -1858,7 +1858,7 @@ gckVGHARDWARE_SetPowerManagementState(
     if (broadcast)
     {
         /* Try to acquire the power mutex. */
-        status = gckOS_AcquireMutex(os, Hardware->powerMutex, 0);
+        status = gckOS_AcquireMutex(os, Hardware->powerMutex, 1);
 
         if (status == gcvSTATUS_TIMEOUT)
         {
@@ -2305,4 +2305,3 @@ OnError:
     return status;
 }
 #endif /* gcdENABLE_VG */
-
