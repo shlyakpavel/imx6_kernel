@@ -1,0 +1,69 @@
+/*
+ * Copyright (C) 2015-2017 Variscite Ltd.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 as
+ * published by the Free Software Foundation.
+ *
+ * Resistive Display for VAR-MX6CustomBoard
+ */
+
+&mxcfb1 {
+	interface_pix_fmt = "RGB24";
+	mode_str = "1920x1080M@60";
+};
+
+&ecspi3 {
+	/* Touch */
+	ads7846@0 {
+		reg = <0>;	/* CS0 */
+		compatible = "ti,ads7846";
+		interrupt-parent = <&gpio4>;
+		interrupts = <25 0>;
+		spi-max-frequency = <1500000>;
+		pendown-gpio = <&gpio4 25 0>;
+		ti,x-min = /bits/ 16 <125>;
+		ti,x-max = /bits/ 16 <4008>;
+		ti,y-min = /bits/ 16 <282>;
+		ti,y-max = /bits/ 16 <3864>;
+		ti,x-plate-ohms = /bits/ 16 <180>;
+		ti,pressure-max = /bits/ 16 <255>;
+		ti,debounce-max = /bits/ 16 <10>;
+		ti,debounce-tol = /bits/ 16 <3>;
+		ti,debounce-rep = /bits/ 16 <1>;
+		ti,settle-delay-usec = /bits/ 16 <150>;
+		ti,keep-vref-on;
+	};
+};
+
+&ldb {
+	status = "okay";
+
+	lvds-channel@0 {
+		fsl,data-mapping = "spwg";
+		fsl,data-width = <24>;
+		status = "okay";
+		primary;
+
+		display-timings {
+			native-mode = <&timing0r>;
+			timing0r: hsd100pxn1 {
+				clock-frequency = <144000000>;
+				hactive = <1920>;
+				vactive = <1080>;
+				hback-porch = <148>;
+				hfront-porch = <88>;
+				vback-porch = <36>;
+				vfront-porch = <4>;
+				hsync-len = <44>;
+				vsync-len = <5>;
+			};
+		};
+	};
+
+	lvds-channel@1 {
+		fsl,data-mapping = "spwg";
+		fsl,data-width = <24>;
+                status = "disabled";
+	};
+};

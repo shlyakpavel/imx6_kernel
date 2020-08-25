@@ -367,6 +367,7 @@ dtb-$(CONFIG_SOC_IMX6Q) += \
 	imx6dl-sabresd-enetirq.dtb \
 	imx6dl-var-som-cap.dtb \
 	imx6dl-var-som-res.dtb \
+	imx6dl-var-som-gb-big.dtb \
 	imx6dl-var-som-solo-cap.dtb \
 	imx6dl-var-som-solo-res.dtb \
 	imx6dl-var-som-solo-vsc.dtb \
@@ -442,9 +443,11 @@ dtb-$(CONFIG_SOC_IMX6Q) += \
 	imx6q-var-dart.dtb \
 	imx6q-var-som-cap.dtb \
 	imx6q-var-som-res.dtb \
+	imx6q-var-som-gb-big.dtb \
 	imx6q-var-som-vsc.dtb \
 	imx6qp-var-som-cap.dtb \
 	imx6qp-var-som-res.dtb \
+	imx6qp-var-som-gb-big.dtb \
 	imx6qp-var-som-vsc.dtb \
 	imx6q-wandboard.dtb \
 	imx6q-wandboard-revb1.dtb \
