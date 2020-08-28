@@ -10,7 +10,7 @@
 
 &mxcfb1 {
 	interface_pix_fmt = "RGB24";
-	mode_str = "1920x1080M@60";
+    default_bpp = <0x00000020>;
 };
 
 &ecspi3 {
@@ -46,8 +46,8 @@
 		primary;
 
 		display-timings {
-			native-mode = <&timing0r>;
-			timing0r: hsd100pxn1 {
+			native-mode = <&hsd100pxn1>;
+			hsd100pxn1: hsd100pxn1 {
 				clock-frequency = <144000000>;
 				hactive = <1920>;
 				vactive = <1080>;
@@ -62,8 +62,6 @@
 	};
 
 	lvds-channel@1 {
-		fsl,data-mapping = "spwg";
-		fsl,data-width = <24>;
                 status = "disabled";
 	};
 };
