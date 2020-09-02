@@ -38,13 +38,12 @@
 
 &ldb {
 	status = "okay";
-
+    split-mode;
 	lvds-channel@0 {
 		fsl,data-mapping = "spwg";
 		fsl,data-width = <24>;
 		status = "okay";
 		primary;
-
 		display-timings {
 			native-mode = <&hsd100pxn1>;
 			hsd100pxn1: hsd100pxn1 {
